@@ -1,9 +1,9 @@
-After Provision
+#After Provision
 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository \
+1. curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+1. sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable"
-sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io build-essential git
+1. sudo apt-get update
+1. sudo apt-get install docker-ce docker-ce-cli containerd.io build-essential git
