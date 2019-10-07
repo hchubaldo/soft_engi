@@ -1,6 +1,6 @@
 build:
 	git pull
-	docker stop ass2
+	docker stop ass2 || true && docker rm ass2 || true
 	docker build -t ass2 . 
 
 run: build
